@@ -9,21 +9,23 @@ const uppercase = string => {
 };
 
 const lowercase = string => {
-  // your code here
-  return string.toLowerCase();
+  // your code here//return string.toLowerCase();
+  return `${string.toLowerCase()}`;
 };
 
 const countCharacters = string => {
-  // your code here//return string.length;
-  return 
+  // your code here//return string.length; 
+  return string.length;
 };
 
 const firstCharacter = string => {
   // your code here//return string[0];
+  return string.charAt(0);
 };
 
 const firstCharacters = (string, n) => {
   // your code here//return string.slice(0, n);
+  return string.substring(0,n);
 };
 
 module.exports = {
