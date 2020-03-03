@@ -14,7 +14,7 @@ const lowercase = string => {
 };
 
 const countCharacters = string => {
-  // your code here//return string.length; 
+  // your code here//return string.length;
   return string.length;
 };
 
@@ -25,7 +25,7 @@ const firstCharacter = string => {
 
 const firstCharacters = (string, n) => {
   // your code here//return string.slice(0, n);
-  return string.substring(0,n);
+  return string.substring(0, n);
 };
 
 module.exports = {
