@@ -1,6 +1,10 @@
 const add = (a, b) => {
   return a + b;
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4990ca921e6e24b175b9747b7d942e9b807787b8
 const subtract = (a, b) => {
   return a - b;
 };
