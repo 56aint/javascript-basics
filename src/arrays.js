@@ -25,7 +25,7 @@ const addToArray2 = (element, array) => {
 
 const removeNthElement = (index, array) => {
   // your code here
-  return array.splice(index,1);
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
@@ -40,31 +40,50 @@ const uppercaseWordsInArray = strings => {
 
 const reverseWordsInArray = strings => {
   // your code here
-  return strings.map(rev => rev.reverse());
+  return strings.map(rev =>
+    rev
+      .split("")
+      .reverse()
+      .join("")
+  );
 };
 
 const onlyEven = numbers => {
   // your code here
+  return numbers.filter(number => number % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
   // your code here
+  return array.slice(0, index).concat(array.slice(index + 1));
+  // splice() will mutate but slice() will not. So i have sliced out the strings we need (copy and paste) and concatenate with another slice out (that we need). Leaving behind the unwanted string.
 };
 
 const elementsStartingWithAVowel = strings => {
   // your code here
+  return strings.filter(word => /^[aeiou]/i.test(word));
+  // /^[aeiou]/i means:
+  // ^ matches the start of the string.
+  // [aeiou] matches any of the characters inside the square brackets, a single time.
+  // i is a case-insensitive modifier.
 };
 
 const removeSpaces = string => {
   // your code here
+  return string.split(" ").join("");
 };
 
 const sumNumbers = numbers => {
   // your code here
+  return numbers.reduce((a, b) => a + b);
+  // a = total, b = currentValue
 };
 
 const sortByLastLetter = strings => {
   // your code here
+  return strings.sort(
+    (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+  );
 };
 
 module.exports = {
